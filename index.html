@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Momma's Veggies</title>
+  </head>
+  <body>
+      <header id="header">
+          <nav class="navbar navbar-expand-lg px-4">
+              <a href="#" class="navbar-brand">
+                <i class="fas fa-carrot"></i>
+              </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="toggler-icon">
+                    <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav text-capitalize mx-auto">
+                        <li class="nav-item active">
+                            <a href="#header" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#about" class="nav-link">about</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#store" class="nav-link">store</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#services" class="nav-link">services</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="nav-info-items d-none d-lg-flex">
+                        <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                            <span class="info-icon mx-lg-3">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <p class="mb-0">+ 123 456 789</p>
+                        </div>
+                        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                            <span class="cart-info__icon mr-lg-3">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                            <p class="mb-0 text-capitalize">
+                                <span id="item-count">2</span>
+                                items - $
+                                <span class="item-total">
+                                    10.49
+                                </span>
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+          </nav>
+          <div class="container-fluid">
+              <div class="row max-height justify-content-center align-items-center">
+                  <div class="col-10 mx-auto banner text-center">
+                      <h1 class="text-capitalize">
+                          Welcome to <strong class="banner-title">Momma's garden</strong>
+                      </h1>
+                      <a href="#" class="btn banner-link text-uppercase my-2">explore</a>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <section class="about py-5" id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-10 mx-auto col-md-6 my-5">
+                    <h1 class="text-capitalize" id="about">about <strong class="banner-title">us</strong></h1>
+                    <p class="my-4 text-muted w-75">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque mollitia consequatur error consectetur eos suscipit quod molestias obcaecati tempore.
+                    </p>
+                    <a href="#" class="btn btn-black text-uppercase">explore</a>
+                  </div>
+                  <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+                     <div class="about-img__container">
+                         <img class="img-fluid" src="./Images/about.jpg" alt="">
+                     </div> 
+                </div>
+              </div>
+          </div>
+      </section>
+      <section id="store" class="store py-5">
+        <div class="container">
+       
+          <div class="row">
+            <div class="col-10 mx-auto col-sm-6 text-center">
+              <h1 class="text-capitalize" id="store">our <strong class="banner-title ">store</strong></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="all">all</a>
+                <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="leafy">Leafy</a>
+                <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="allium">Allium</a>
+                <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="marrow">Marrow</a>
+                <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="cruciferous">Cruciferous</a> </div>
+          </div>
+          
+          <div class="row">
+    
+            <div class="col-10 mx-auto col-md-6">
+              <form>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder='item....' id="search-item">
+                </div>
+    
+              </form>
+            </div>
+          </div>
+          <div class="row" id="store-items">
+         
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="leafy">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/leafy.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">Leafy</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+  
+            </div>
+            
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="allium">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/allium.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">alluim</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+             
+            </div>
+         
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cruciferous">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/cruciferous-1.jpg" class="card-img-top store-img" alt="" width="250" height="250" style="background-size: cover;">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">cruciferous</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              
+            </div>
+           
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="leafy">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/leafy-2.jpg" class="card-img-top store-img" alt=""  width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">leafy</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            
+            </div>
+           
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="alliun">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/allium-2.jpg" class="card-img-top store-img" alt=""  width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">alluim</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            
+            </div>
+          
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cruciferous">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/cruciferous-2.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">cruciferous</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+    
+                  </div>
+                </div>
+            </div>
+            </div>
+          
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="leafy">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/leafy-3.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">leafy</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="alluim">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/allium-3.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">alluim</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cruciferous">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/mitchell-luo-hT9QZjlmWBY-unsplash.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">cruciferous</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="marrow">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/marrow-1.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">marrow</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="marrow">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="Images/marrow-2.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">marrow</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="marrow">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="images/marrow-3.jpg" class="card-img-top store-img" alt="" width="250" height="250">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">marrow</h5>
+                    <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+      </section>
+
+   
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html
